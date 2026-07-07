@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anantha Herbal Product</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="admine-product.html">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      🌿 Anantha Herbal Products 
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Anantha Herbal Products</h1>
+      <h2>Pure Herbal Wellness</h2>
+      <p>
+        Natural Healing • Organic Products • Healthy Lifestyle
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products"><button class="shop-btn">Shop Now</button></a>
+        <a href="#benefits"><button class="explore-btn">Explore</button></a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="feature-card">
+      <i class="fa-solid fa-leaf"></i>
+      <h3>100% Organic</h3>
+      <p>Pure natural herbal ingredients</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-solid fa-heart"></i>
+      <h3>Healthy Living</h3>
+      <p>Improve your lifestyle naturally</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-solid fa-truck"></i>
+      <h3>Fast Delivery</h3>
+      <p>Quick delivery to your doorstep</p>
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+
+    <div class="section-title">
+      <h2>Popular Herbal Products</h2>
+      <p>Best selling natural wellness products</p>
+    </div>
+
+    <div class="products" id="productContainer"></div>
+
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits" id="benefits">
+
+    <div class="benefit-left">
+     <img 
+src="image.png" 
+alt="Natural Herbal Products"
+style="width:100%; height:500px; object-fit:cover; border-radius:20px;"
+>
+>
+    </div>
+
+    <div class="benefit-right">
+      <h2>Why Choose Herbal Products?</h2>
+
+      <div class="benefit-box">
+        ✔ Chemical Free Products
+      </div>
+
+      <div class="benefit-box">
+        ✔ Safe & Natural Ingredients
+      </div>
+
+      <div class="benefit-box">
+        ✔ Trusted Herbal Solutions
+      </div>
+
+      <div class="benefit-box">
+        ✔ Better Health & Wellness
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+
+      <button>Send Message</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>🌿 Herbal Nature</h3>
+    <p>Nature's Healing, Naturally</p>
+    <p>Created by <strong>S.Vimal Raj</strong> in <b>Fu-glide Innovation Network</b></p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart">X</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+      <h3>Total: ₹<span id="totalPrice">0</span></h3>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
